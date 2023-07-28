@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap');
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px = 1rem */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/********************/
+/****** HEADER ******/
+/********************/
+
+.header {
+  height: 9rem;
+  box-shadow: 0px 8px 12px -5px rgba(0,0,0,0.1);
+}
+
+.navigation {
+  padding: 2.5rem 5rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 3rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+
+.dark-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 1rem; 
+  border-radius: 10px;
+  
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.dark-white:hover {
+  filter: brightness(90%);
+}
+
+.theme-icon {
+  height: 3rem;
+}
+
+
+
+/********************/
+/****** MAIN ******/
+/********************/
+
+.main {
+  padding: 4rem 5rem;
+}
+
+
+/********************/
+/****** INPUT ******/
+/********************/
+
+.container-search {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: -1px 1px 21px 0px rgba(0,0,0,0.1);
+  max-width: 100%;
+  margin-bottom: 7rem;
+  /* width: 35%; */
+  border: 1px solid rgba(128, 128, 128, 0.27);
+}
+
+.icon-input {
+  height: 2.2rem;
+}
+
+.button-icon-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem;
+  border: none;
+  cursor: pointer;
+  /* border-radius: 1rem; */
+  background-color: rgba(193, 201, 201, 0.439);
+  transition: all 0.4s;
+}
+
+.button-icon-search:hover {
+  background-color: rgba(193, 201, 201, 0.75);
+}
+
+.input-search {
+  width: 100%;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 2rem;
+  font-family: inherit;
+  letter-spacing: 1px;
+
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+/****************************/
+/****** RESULTS/CARDS ******/
+/**************************/
+.grid-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.country {
+  box-shadow: 0px 8px 12px -5px rgba(0,0,0,0.3);
+}
+
+.flag-country {
+  box-shadow: -1px 1px 21px 0px rgba(0,0,0,0.1);
+  max-width: 100%;
+  /* Establecer la altura automática para mantener la proporción original */
+  height: auto;
+  /* height: 20rem; */
+  border-radius: 5px;
+}
+
+.country-info {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem 2rem;
+}
+
+.country-name {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.country-name span {
+  font-weight: 800;
+}
+
+.data-pop {
+font-size: 1.6rem;
+}
+
+.data-pop span {
+font-weight: 600;
+}
+
+.data-reg {
+  font-size: 1.6rem;
+}
+
+.data-reg span {
+  font-weight: 600;
+}
+
+.data-cap {
+  font-size: 1.6rem;
+}
+
+.data-cap span {
+  font-weight: 600;
+}
+
+
+/************************/
+/****** ERROR MSG ******/
+/**********************/
+.error-msg {
+  font-size: 2rem;
+  font-weight: 800;
+  color:red;
+  margin-bottom: 5rem;
+
+  grid-column: span 4;
+  text-align: center;
+}
+
+/************************/
+/****** HOME ******/
+/**********************/
+#inicio-link {
+  display: flex;
+  gap: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(193, 201, 201, 0.439);
+  border: 2px solid rgba(128, 128, 128, 0.125);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.9rem 1rem;
+  font-size: 2rem;
+  transition: all 0.4s;
+}
+
+#inicio-link:hover {
+  background-color: rgba(193, 201, 201, 0.65);
+}
+
+.icon-search {
+  height: 2.5rem;
+  font-weight: 600;
+}
+
+.input-icon {
+  color: black;
+}
+
+.dark-white span {
+  font-size: 1.8rem;
+}
+
+/********************************/
+/****** THEME WHITE/BLACK ******/
+/********************************/
+
+.dark-mode {
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+  .logo {
+    color: white;
+  }
+
+ #inicio-link {
+  background-color:  white;
+  ;
+ }
+}
+
+.dark-mode span {
+  font-size: 1.8rem;
+}

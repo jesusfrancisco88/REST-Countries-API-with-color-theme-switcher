@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/world-wide-svgrepo-com.svg" type="image/x-icon">
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/queries.css">
+  <!-- Animated AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--  -->
+  <title>App | REST Countries API</title>
+</head>
+<body>
+  <!-- HEADER MENU -->
+  <header class="header">
+    <nav class="navigation">
+      <a href="#" class="logo">🌎 Where in the world?</a>
+        <!-- <span class="theme-button"><img class="theme-icon" src="/img/moon-outline.svg" alt="theme color"></span> -->
+        <button class="dark-white" onclick="myFunction()">
+          <img class="theme-icon" src="/img/contrast-outline.svg" alt="theme color">
+          <span>Dark Mode</span>
+        </button>
+    </nav>
+  </header>
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <div class="container-search">
+
+      <div class="search-section">
+        <input class="input-search" type="text" id="search" placeholder="Search for a country...">
+        <button class="button-icon-search" for="search"><span class="input-icon"><img class="icon-input" src="./img/search-outline.svg" alt="icon-search"></span></button>
+      </div>
+
+      <div>
+      <a href="#" id="inicio-link">
+        <span class="input-icon">Countries</span>
+        <img class="icon-search" src="./img/flag-outline.svg" alt="icon-home">
+      </a>
+    </div>
+    </div>
+    
+    <div id="result" class="grid-cards" data-aos="zoom-in" data-aos-duration="1000"></div>
+  </main>
+</body>
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>
