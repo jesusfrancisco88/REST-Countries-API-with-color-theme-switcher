@@ -11,8 +11,8 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repository](https://github.com/jesusfrancisco88/REST-Countries-API-with-color-theme-switcher)
+- Live Site URL: [Live Site - Netlify](https://jf-restcountries-app.netlify.app/)
 
 ## My process
 
